@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,4">
+    <item>
+     <widget class="QToolBox" name="toolBox">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>155</width>
+         <height>409</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset theme="QIcon::ThemeIcon::DocumentOpen"/>
+       </attribute>
+       <attribute name="label">
+        <string>列表项操作</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QToolButton" name="toolButton">
+          <property name="text">
+           <string>tBtnLisiIni</string>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+          </property>
+          <property name="autoRaise">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_2">
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+          </property>
+          <property name="autoRaise">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_3">
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+          </property>
+          <property name="autoRaise">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_4">
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+          </property>
+          <property name="autoRaise">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_5">
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+          </property>
+          <property name="autoRaise">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>155</width>
+         <height>409</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset theme="QIcon::ThemeIcon::EditRedo"/>
+       </attribute>
+       <attribute name="label">
+        <string>列表排序</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QCheckBox" name="checkBox_2">
+          <property name="text">
+           <string>允许排序</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_6">
+          <property name="text">
+           <string>升序排序</string>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonStyle::ToolButtonTextBesideIcon</enum>
+          </property>
+          <property name="autoRaise">
+           <bool>false</bool>
+          </property>
+          <property name="arrowType">
+           <enum>Qt::ArrowType::UpArrow</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_7">
+          <property name="text">
+           <string>降序排序</string>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonStyle::ToolButtonTextBesideIcon</enum>
+          </property>
+          <property name="autoRaise">
+           <bool>false</bool>
+          </property>
+          <property name="arrowType">
+           <enum>Qt::ArrowType::DownArrow</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>290</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>155</width>
+         <height>409</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset theme="QIcon::ThemeIcon::HelpAbout"/>
+       </attribute>
+       <attribute name="label">
+        <string>信号发射时机</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>当前项变化</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit"/>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox">
+           <property name="text">
+            <string>项可编辑</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QToolButton" name="toolButton_11">
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::ToolButtonPopupMode::MenuButtonPopup</enum>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonStyle::ToolButtonTextBesideIcon</enum>
+           </property>
+           <property name="arrowType">
+            <enum>Qt::ArrowType::DownArrow</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_8">
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_9">
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="toolButton_10">
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonStyle::ToolButtonTextBesideIcon</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QListWidget" name="listWidget">
+         <property name="contextMenuPolicy">
+          <enum>Qt::ContextMenuPolicy::CustomContextMenu</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="tabletTracking">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="a1"/>
+   <addaction name="a2"/>
+   <addaction name="a3"/>
+   <addaction name="a4"/>
+   <addaction name="a5"/>
+  </widget>
+  <action name="a1">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::AddressBookNew"/>
+   </property>
+   <property name="text">
+    <string>初始化列表</string>
+   </property>
+   <property name="whatsThis">
+    <string>初始化列表</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+   <property name="priority">
+    <enum>QAction::Priority::NormalPriority</enum>
+   </property>
+  </action>
+  <action name="a2">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ApplicationExit"/>
+   </property>
+   <property name="text">
+    <string>清除列表</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="a3">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentSave"/>
+   </property>
+   <property name="text">
+    <string>插入项</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="a4">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+   </property>
+   <property name="text">
+    <string>添加项</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="a5">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::EditDelete"/>
+   </property>
+   <property name="text">
+    <string>删除当前项</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="a6">
+   <property name="text">
+    <string>全选</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="a7">
+   <property name="text">
+    <string>全不选</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="a8">
+   <property name="text">
+    <string>反选</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="a9">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::MailReplySender"/>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="a10">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentPageSetup"/>
+   </property>
+   <property name="text">
+    <string>项选择</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
