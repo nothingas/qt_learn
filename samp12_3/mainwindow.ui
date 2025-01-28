@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Drag Mode</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="dragMode"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="rubberBand">
+      <property name="text">
+       <string>Rubber Band</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QComboBox" name="comboBox_2"/>
+    </item>
+    <item row="1" column="0" colspan="4">
+     <widget class="TChartView" name="chartView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action"/>
+   <addaction name="separator"/>
+   <addaction name="action_2"/>
+   <addaction name="action_3"/>
+   <addaction name="action_4"/>
+  </widget>
+  <action name="action">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::EditClear"/>
+   </property>
+   <property name="text">
+    <string>取消选点</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ZoomIn"/>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ZoomOut"/>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ZoomFitBest"/>
+   </property>
+   <property name="text">
+    <string>实际大小</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TChartView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">tchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
